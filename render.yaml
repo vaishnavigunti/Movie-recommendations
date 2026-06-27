@@ -1,0 +1,15 @@
+# Render blueprint — deploy with one click from the repo.
+services:
+  - type: web
+    name: cinematch
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.4"
+      - key: TMDB_API_KEY
+        sync: false        # set this secret in the Render dashboard
+      - key: TMDB_REGION
+        value: US

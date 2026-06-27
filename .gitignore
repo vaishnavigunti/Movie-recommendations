@@ -1,0 +1,40 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.installed.cfg
+
+# ── Virtual environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+*.env.local
+*.env.*.local
+
+# ── Large model files (> 100 MB — regenerate with recommender.py) ────────────
+models/similarity.pkl
+
+# ── Large raw dataset (download from Kaggle — see README) ────────────────────
+data/tmdb_5000_credits.csv
+
+# ── OS / editor noise ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+*.log
+*.tmp
