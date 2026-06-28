@@ -1,0 +1,19 @@
+{
+  "name": "CineMatch — Movie Recommendations",
+  "short_name": "CineMatch",
+  "description": "Find your next favourite film. Content-based movie recommendations powered by the TMDB 5000 dataset.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#07080f",
+  "theme_color": "#07080f",
+  "icons": [
+    {
+      "src": "/static/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

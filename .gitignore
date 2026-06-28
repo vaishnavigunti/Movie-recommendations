@@ -38,3 +38,6 @@ Thumbs.db
 # ── Misc ─────────────────────────────────────────────────────────────────────
 *.log
 *.tmp
+
+# ── Hugging Face Space deploy copy (separate git repo / HF remote) ────────────
+movie-recommendations/

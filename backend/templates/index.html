@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>CineMatch · Movie Discovery</title>
     <meta name="description" content="Discover your next favourite film. Content-based movie recommendations powered by the TMDB 5000 dataset." />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#07080f" />
+
+    <!-- Add-to-home-screen / mobile web app -->
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.webmanifest') }}" />
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}" />
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='favicon.svg') }}" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="CineMatch" />
+
+    <!-- Social / resume link previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CineMatch · Movie Discovery" />
+    <meta property="og:description" content="Search any title and get five hand-picked recommendations based on story, genre, cast and crew." />
+    <meta property="og:site_name" content="CineMatch" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CineMatch · Movie Discovery" />
+    <meta name="twitter:description" content="Content-based movie recommendations powered by the TMDB 5000 dataset." />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,6 +78,10 @@
                         class="search__input"
                         placeholder="Search any movie… e.g. Inception"
                         autocomplete="off"
+                        autocapitalize="off"
+                        autocorrect="off"
+                        spellcheck="false"
+                        enterkeyhint="search"
                         aria-label="Search for a movie" />
                     <button class="btn btn--primary" id="recommendBtn">
                         <span>Recommend</span>
